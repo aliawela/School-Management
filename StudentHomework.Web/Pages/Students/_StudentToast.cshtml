@@ -1,0 +1,10 @@
+@model StudentHomework.Web.Pages.Students._StudentToastModel
+
+<div class="toast align-items-center text-bg-primary border-0 position-fixed bottom-0 end-0 m-4" id="studentToast" role="alert" aria-live="assertive" aria-atomic="true" style="z-index: 1080;">
+    <div class="d-flex">
+        <div class="toast-body">
+            @Model.Message
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+</div>

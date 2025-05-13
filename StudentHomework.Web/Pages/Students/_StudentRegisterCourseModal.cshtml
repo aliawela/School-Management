@@ -1,0 +1,37 @@
+@model List<StudentHomework.Web.Pages.Students.CourseViewModel>
+<div class="modal fade" id="studentRegisterCourseModal" tabindex="-1" aria-labelledby="studentRegisterCourseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="studentRegisterCourseModalLabel">Register Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="registerCourseForm" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-3">
+                        <label for="availableCourses" class="form-label">Available Courses</label>
+                        <select class="form-select" id="availableCourses" name="courseId">
+                            @if (Model != null && Model.Count > 0)
+                            {
+                                foreach (var course in Model)
+                                {
+                                    <option value="@course.CourseId">@course.CourseName</option>
+                                }
+                            }
+                            else
+                            {
+                                <option disabled>No available courses</option>
+                            }
+                        </select>
+                    </div>
+                    <input type="hidden" id="registerStudentId" name="studentId" value="" />
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success" id="registerCourseSubmitBtn">Register</button>
+            </div>
+        </div>
+    </div>
+</div>

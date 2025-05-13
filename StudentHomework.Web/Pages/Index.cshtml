@@ -1,0 +1,56 @@
+﻿@page
+@model StudentHomework.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+    var selectedTab = Request.Query["tab"].ToString().ToLower();
+    if (string.IsNullOrEmpty(selectedTab)) selectedTab = "students";
+}
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">StudentHomework</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link @(selectedTab == "students" ? "active" : "")" href="/?tab=students">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(selectedTab == "courses" ? "active" : "")" href="/?tab=courses">Courses</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="d-flex">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="bg-white border-end shadow-sm" style="min-width:220px;min-height:100vh;">
+        <div class="sidebar-header p-4 border-bottom">
+            <h4 class="fw-bold mb-0">Dashboard</h4>
+        </div>
+        <ul class="nav flex-column py-3">
+            <li class="nav-item mb-2">
+                <a class="nav-link d-flex align-items-center @(selectedTab == "students" ? "active bg-primary text-white rounded-3" : "text-dark")" href="/?tab=students">
+                    <i class="bi bi-people me-2"></i> Student Management
+                </a>
+            </li>
+            <li class="nav-item mb-2">
+                <a class="nav-link d-flex align-items-center @(selectedTab == "courses" ? "active bg-primary text-white rounded-3" : "text-dark")" href="/?tab=courses">
+                    <i class="bi bi-journal-bookmark me-2"></i> Course Management
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Main Content -->
+    <main class="flex-fill p-4">
+        @if (selectedTab == "students")
+        {
+            <iframe src="/Students/Index?dashboard=true" style="border:none;width:100vw;height:100vh;"></iframe>
+        }
+        else if (selectedTab == "courses")
+        {
+            <iframe src="/Courses/Index?dashboard=true" style="border:none;width:100vw;height:100vh;"></iframe>
+        }
+    </main>
+</div>

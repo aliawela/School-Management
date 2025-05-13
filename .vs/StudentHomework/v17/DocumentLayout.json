@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Infrastructure\\Migrations\\20250513094907_removeInstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentHomework.Infrastructure\\Migrations\\20250513094907_removeInstructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC68EB68-80E4-B1BB-AE6F-845B4D2A7F3E}|StudentHomework.Web\\StudentHomework.Web.csproj|c:\\users\\ali awela\\source\\repos\\studenthomework\\studenthomework.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC68EB68-80E4-B1BB-AE6F-845B4D2A7F3E}|StudentHomework.Web\\StudentHomework.Web.csproj|solutionrelative:studenthomework.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D47F1407-10A9-41F0-B336-ED577D36A873}|StudentHomework.Infrastructure\\StudentHomework.Infrastructure.csproj|c:\\users\\ali awela\\source\\repos\\studenthomework\\studenthomework.infrastructure\\migrations\\20250510120333_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D47F1407-10A9-41F0-B336-ED577D36A873}|StudentHomework.Infrastructure\\StudentHomework.Infrastructure.csproj|solutionrelative:studenthomework.infrastructure\\migrations\\20250510120333_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC68EB68-80E4-B1BB-AE6F-845B4D2A7F3E}|StudentHomework.Web\\StudentHomework.Web.csproj|c:\\users\\ali awela\\source\\repos\\studenthomework\\studenthomework.web\\pages\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC68EB68-80E4-B1BB-AE6F-845B4D2A7F3E}|StudentHomework.Web\\StudentHomework.Web.csproj|solutionrelative:studenthomework.web\\pages\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC68EB68-80E4-B1BB-AE6F-845B4D2A7F3E}|StudentHomework.Web\\StudentHomework.Web.csproj|c:\\users\\ali awela\\source\\repos\\studenthomework\\studenthomework.web\\pages\\students\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC68EB68-80E4-B1BB-AE6F-845B4D2A7F3E}|StudentHomework.Web\\StudentHomework.Web.csproj|solutionrelative:studenthomework.web\\pages\\students\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D22F7028-851A-4A45-95EF-850A42988C3B}|StudentHomework.Application\\StudentHomework.Application.csproj|c:\\users\\ali awela\\source\\repos\\studenthomework\\studenthomework.application\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D22F7028-851A-4A45-95EF-850A42988C3B}|StudentHomework.Application\\StudentHomework.Application.csproj|solutionrelative:studenthomework.application\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250513094907_removeInstructor.cs",
+              "DocumentMoniker": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Infrastructure\\Migrations\\20250513094907_removeInstructor.cs",
+              "RelativeDocumentMoniker": "StudentHomework.Infrastructure\\Migrations\\20250513094907_removeInstructor.cs",
+              "ToolTip": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Infrastructure\\Migrations\\20250513094907_removeInstructor.cs",
+              "RelativeToolTip": "StudentHomework.Infrastructure\\Migrations\\20250513094907_removeInstructor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T09:49:08.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250510120333_initial.cs",
+              "DocumentMoniker": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Infrastructure\\Migrations\\20250510120333_initial.cs",
+              "RelativeDocumentMoniker": "StudentHomework.Infrastructure\\Migrations\\20250510120333_initial.cs",
+              "ToolTip": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Infrastructure\\Migrations\\20250510120333_initial.cs",
+              "RelativeToolTip": "StudentHomework.Infrastructure\\Migrations\\20250510120333_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T12:03:33.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Web\\Pages\\Students\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "StudentHomework.Web\\Pages\\Students\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Web\\Pages\\Students\\Index.cshtml.cs",
+              "RelativeToolTip": "StudentHomework.Web\\Pages\\Students\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T12:01:05.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Web\\Pages\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentHomework.Web\\Pages\\Students\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Web\\Pages\\Students\\Index.cshtml",
+              "RelativeToolTip": "StudentHomework.Web\\Pages\\Students\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAASwD4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T11:57:11.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Web\\Program.cs",
+              "RelativeDocumentMoniker": "StudentHomework.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Web\\Program.cs",
+              "RelativeToolTip": "StudentHomework.Web\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T11:23:00.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Application\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "StudentHomework.Application\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\ALI AWELA\\source\\repos\\StudentHomework\\StudentHomework.Application\\MappingProfile.cs",
+              "RelativeToolTip": "StudentHomework.Application\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T11:22:51.868Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\bin\Debug\net8.0\StudentHomework.Domain.deps.json
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\bin\Debug\net8.0\StudentHomework.Domain.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\bin\Debug\net8.0\StudentHomework.Domain.pdb
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\StudentHomework.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\StudentHomework.Domain.AssemblyInfoInputs.cache
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\StudentHomework.Domain.AssemblyInfo.cs
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\StudentHomework.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\StudentHomework.Domain.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\refint\StudentHomework.Domain.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\StudentHomework.Domain.pdb
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\ref\StudentHomework.Domain.dll

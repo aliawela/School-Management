@@ -1,0 +1,73 @@
+@page
+@model StudentHomework.Web.Pages.Courses.IndexModel
+@{
+    ViewData["Title"] = "Courses";
+}
+<div class="container-fluid py-4">
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+        <h2 class="fw-semibold mb-0">Course Management</h2>
+        <button class="btn btn-success rounded-3" id="addCourseBtn"><i class="bi bi-plus-lg"></i> Add Course</button>
+        <button class="btn btn-primary rounded-3" id="editCourseBtn"><i class="bi bi-pencil"></i> Edit</button>
+        <button class="btn btn-danger rounded-3" id="deleteCourseBtn"><i class="bi bi-trash"></i> Delete</button>
+    </div>
+    <div class="card shadow-sm rounded-4 mb-4">
+        <div class="card-body">
+            <form class="row g-3 mb-2" id="courseFilters">
+                <div class="col-md-4">
+                    <input type="text" class="form-control rounded-3" placeholder="Search by title..." name="TitleFilter" value="@Model.TitleFilter" />
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-primary rounded-3 w-100" type="submit">Filter</button>
+                </div>
+            </form>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle rounded-4" id="coursesTable">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col"><input type="checkbox" id="selectAllCourses" /></th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var course in Model.Courses)
+                        {
+                            <tr data-course-id="@course.CourseId">
+                                <td><input type="checkbox" class="course-select" value="@course.CourseId" /></td>
+                                <td>@course.Title</td>
+                                <td>@course.CourseDescription</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <nav>
+                <ul class="pagination justify-content-start" id="coursesPagination">
+                    <!-- Pagination will be handled client-side -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+@await Html.PartialAsync("_CourseEditModal", Model.CourseEditModal)
+@await Html.PartialAsync("_CourseDeleteModal", Model.CourseDeleteModal)
+@await Html.PartialAsync("_CourseToast", Model.CourseToast)
+@section Scripts {
+    <script src="~/js/courses.js" asp-append-version="true"></script>
+    <script>
+        document.querySelector('#courseDeleteForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const courseIds = document.querySelector('#deleteCourseIds').value;
+            const response = await fetch('/Courses/Index?handler=DeleteCourses', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ courseIds: courseIds.split(',') })
+            });
+            if (response.ok) {
+                location.reload();
+            } else {
+                alert('Failed to delete courses.');
+            }
+        });
+    </script>
+}

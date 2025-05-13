@@ -1,0 +1,127 @@
+﻿@page
+@model StudentHomework.Web.Pages.Students.IndexModel
+@{
+    ViewData["Title"] = "Students";
+}
+<div class="container-fluid py-4">
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+        <h2 class="fw-semibold mb-0">Student Management</h2>
+        <button class="btn btn-success rounded-3" id="addStudentBtn"><i class="bi bi-plus-lg"></i> Add Student</button>
+        <button class="btn btn-primary rounded-3" id="editStudentBtn"><i class="bi bi-pencil"></i> Edit</button>
+        <button class="btn btn-danger rounded-3" id="deleteStudentBtn"><i class="bi bi-trash"></i> Delete</button>
+    </div>
+    <div class="card shadow-sm rounded-4 mb-4">
+        <div class="card-body">
+            <form class="row g-3 mb-2" id="studentFilters">
+                <div class="col-md-4">
+                    <input type="text" class="form-control rounded-3" placeholder="Search by name..." name="NameFilter" />
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-primary rounded-3 w-100" type="submit">Filter</button>
+                </div>
+            </form>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle rounded-4 table-sm" id="studentsTable" style="margin-bottom:0;">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col" style="padding-left:2px;padding-right:2px;"><input type="checkbox" id="selectAllStudents" /></th>
+                            <th scope="col" style="padding-left:2px;padding-right:2px;">Name</th>
+                            <th scope="col" style="padding-left:2px;padding-right:2px;">Email</th>
+                            <th scope="col" style="padding-left:2px;padding-right:2px;">Date of Birth</th>
+                            <th scope="col" style="padding-left:2px;padding-right:2px;">Courses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var student in Model.Students)
+                        {
+                            <tr class="student-row" data-student-id="@student.StudentId" style="cursor:pointer;">
+                                <td style="padding-left:2px;padding-right:2px;"><input type="checkbox" class="student-select" value="@student.StudentId" /></td>
+                                <td style="padding-left:2px;padding-right:2px;">@student.Name</td>
+                                <td style="padding-left:2px;padding-right:2px;">@student.Email</td>
+                                <td style="padding-left:2px;padding-right:2px;">@student.DateOfBirth.ToShortDateString()</td>
+                                <td style="padding-left:2px;padding-right:2px;">
+                                    @if (student.Courses != null && student.Courses.Count > 0)
+                                    {
+                                        foreach (var course in student.Courses)
+                                        {
+                                            <span class="badge bg-info text-dark rounded-pill me-1">@course.CourseName</span>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">None</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <ul class="pagination justify-content-start mt-3" id="studentsPagination"></ul>
+        </div>
+    </div>
+</div>
+@await Html.PartialAsync("_StudentEditModal", Model.StudentEditModal)
+@await Html.PartialAsync("_StudentDeleteModal", Model.StudentDeleteModal)
+@await Html.PartialAsync("_StudentToast", Model.StudentToast)
+@await Html.PartialAsync("_StudentInfoModal", new StudentHomework.Web.Pages.Students.StudentInfoViewModel())
+@await Html.PartialAsync("_StudentRegisterCourseModal", new List<StudentHomework.Web.Pages.Students.CourseViewModel>())
+
+<ul class="pagination justify-content-start mt-3" id="coursesPagination"></ul>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+    <script src="~/js/students.js" asp-append-version="true"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.student-row').forEach(function(row) {
+                row.addEventListener('click', function(e) {
+                    // Prevent checkbox click from triggering row click
+                    if (e.target.tagName === 'INPUT') return;
+                    const studentId = this.getAttribute('data-student-id');
+                    showStudentInfo(studentId);
+                });
+            });
+        });
+        async function showStudentInfo(studentId) {
+            const response = await fetch(`/Students/Index?handler=StudentInfo&id=${studentId}`);
+            const data = await response.json();
+            document.querySelector('#studentInfoModal .modal-title').textContent = 'Student Information';
+            const modalBody = document.querySelector('#studentInfoModal .modal-body');
+            let html = `<dl class='row'>`;
+            html += `<dt class='col-sm-3'>Name</dt><dd class='col-sm-9'>${data.name ?? ''}</dd>`;
+            html += `<dt class='col-sm-3'>Email</dt><dd class='col-sm-9'>${data.email ?? ''}</dd>`;
+            html += `<dt class='col-sm-3'>Date of Birth</dt><dd class='col-sm-9'>${data.dateOfBirth ?? ''}</dd>`;
+            html += `<dt class='col-sm-3'>Courses</dt><dd class='col-sm-9'>`;
+            if (Array.isArray(data.courses) && data.courses.length > 0) {
+                data.courses.forEach(function(course) {
+                    html += `<span class='badge bg-info text-dark rounded-pill me-1 mb-1'>${course.courseName}</span>`;
+                });
+            } else {
+                html += 'No courses enrolled.';
+            }
+            html += '</dd></dl>';
+            html += `<div class='d-flex justify-content-end gap-2 mt-4'>`;
+            html += `<button class='btn btn-success' onclick='registerCourse(${studentId})'>Register Course</button>`;
+            html += `</div>`;
+            modalBody.innerHTML = html;
+            var modal = new bootstrap.Modal(document.getElementById('studentInfoModal'));
+            modal.show();
+        }
+        document.querySelector('#studentDeleteForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const studentIds = document.querySelector('#deleteStudentIds').value;
+            const response = await fetch('/Students/Index?handler=DeleteStudents', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ studentIds: studentIds.split(',') })
+            });
+            if (response.ok) {
+                location.reload();
+            } else {
+                alert('Failed to delete students.');
+            }
+        });
+    </script>
+}

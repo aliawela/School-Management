@@ -1,0 +1,17 @@
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\bin\Debug\net8.0\StudentHomework.Application.deps.json
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\bin\Debug\net8.0\StudentHomework.Application.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\bin\Debug\net8.0\StudentHomework.Application.pdb
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\bin\Debug\net8.0\StudentHomework.Domain.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\bin\Debug\net8.0\StudentHomework.Infrastructure.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\bin\Debug\net8.0\StudentHomework.Domain.pdb
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\bin\Debug\net8.0\StudentHomework.Infrastructure.pdb
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentHomework.Application.csproj.AssemblyReference.cache
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentHomework.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentHomework.Application.AssemblyInfoInputs.cache
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentHomework.Application.AssemblyInfo.cs
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentHomework.Application.csproj.CoreCompileInputs.cache
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentH.82CA1C4C.Up2Date
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentHomework.Application.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\refint\StudentHomework.Application.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentHomework.Application.pdb
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\ref\StudentHomework.Application.dll

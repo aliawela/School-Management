@@ -1,0 +1,17 @@
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\bin\Debug\net8.0\StudentHomework.Infrastructure.deps.json
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\bin\Debug\net8.0\StudentHomework.Infrastructure.runtimeconfig.json
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\bin\Debug\net8.0\StudentHomework.Infrastructure.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\bin\Debug\net8.0\StudentHomework.Infrastructure.pdb
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\bin\Debug\net8.0\StudentHomework.Domain.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\bin\Debug\net8.0\StudentHomework.Domain.pdb
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.AssemblyInfo.cs
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentH.752673FB.Up2Date
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\refint\StudentHomework.Infrastructure.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.pdb
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.genruntimeconfig.cache
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\ref\StudentHomework.Infrastructure.dll
