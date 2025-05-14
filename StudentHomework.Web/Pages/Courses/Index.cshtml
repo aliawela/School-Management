@@ -54,20 +54,5 @@
 @await Html.PartialAsync("_CourseToast", Model.CourseToast)
 @section Scripts {
     <script src="~/js/courses.js" asp-append-version="true"></script>
-    <script>
-        document.querySelector('#courseDeleteForm').addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const courseIds = document.querySelector('#deleteCourseIds').value;
-            const response = await fetch('/Courses/Index?handler=DeleteCourses', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ courseIds: courseIds.split(',') })
-            });
-            if (response.ok) {
-                location.reload();
-            } else {
-                alert('Failed to delete courses.');
-            }
-        });
-    </script>
+
 }

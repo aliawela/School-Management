@@ -109,19 +109,5 @@
             var modal = new bootstrap.Modal(document.getElementById('studentInfoModal'));
             modal.show();
         }
-        document.querySelector('#studentDeleteForm').addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const studentIds = document.querySelector('#deleteStudentIds').value;
-            const response = await fetch('/Students/Index?handler=DeleteStudents', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ studentIds: studentIds.split(',') })
-            });
-            if (response.ok) {
-                location.reload();
-            } else {
-                alert('Failed to delete students.');
-            }
-        });
     </script>
 }
