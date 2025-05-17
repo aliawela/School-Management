@@ -1,8 +1,8 @@
-namespace StudentHomework.Application.DTOs
+namespace StudentHomework.Web.Models
 {
     public class CourseEditViewModel
     {
-        public int CourseId { get; set; } // Will be auto-incremented by DB
+        public int CourseId { get; set; }
         public string Title { get; set; } = string.Empty;
         public string CourseDescription { get; set; } = string.Empty;
     }

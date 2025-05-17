@@ -13,9 +13,6 @@ namespace StudentHomework.Application
             CreateMap<Course, CourseDto>()
                 .ForMember(dest => dest.CourseDescription, opt => opt.MapFrom(src => src.CourseDescription))
                 .ReverseMap();
-            CreateMap<CourseEditViewModel, CourseDto>()
-                .ForMember(dest => dest.CourseName, opt => opt.MapFrom(src => src.Title))
-                .ForMember(dest => dest.CourseDescription, opt => opt.MapFrom(src => src.CourseDescription));
         }
     }
 }

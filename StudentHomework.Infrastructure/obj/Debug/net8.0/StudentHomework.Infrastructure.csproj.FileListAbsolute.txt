@@ -15,3 +15,4 @@ C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\o
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.pdb
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.genruntimeconfig.cache
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\ref\StudentHomework.Infrastructure.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Infrastructure\obj\Debug\net8.0\StudentHomework.Infrastructure.sourcelink.json

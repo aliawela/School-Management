@@ -167,3 +167,4 @@ C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Web\obj\Debug\ne
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Web\obj\Debug\net8.0\StudentHomework.Web.pdb
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Web\obj\Debug\net8.0\StudentHomework.Web.genruntimeconfig.cache
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Web\obj\Debug\net8.0\ref\StudentHomework.Web.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Web\obj\Debug\net8.0\StudentHomework.Web.sourcelink.json

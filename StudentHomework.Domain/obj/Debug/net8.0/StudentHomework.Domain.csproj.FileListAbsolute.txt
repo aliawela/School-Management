@@ -9,3 +9,4 @@ C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\refint\StudentHomework.Domain.dll
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\StudentHomework.Domain.pdb
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\ref\StudentHomework.Domain.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Domain\obj\Debug\net8.0\StudentHomework.Domain.sourcelink.json

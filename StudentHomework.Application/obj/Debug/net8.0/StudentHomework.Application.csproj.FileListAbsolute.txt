@@ -15,3 +15,4 @@ C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\refint\StudentHomework.Application.dll
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentHomework.Application.pdb
 C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\ref\StudentHomework.Application.dll
+C:\Users\ALI AWELA\source\repos\StudentHomework\StudentHomework.Application\obj\Debug\net8.0\StudentHomework.Application.sourcelink.json
